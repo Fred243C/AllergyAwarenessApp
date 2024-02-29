@@ -9,30 +9,119 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+          background-color: #f8f9fa;
+      }
+      .app-header {
+          background-color: hsl(133, 33%, 60%);
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+      }
+      .app-section {
+          margin: 20px 0;
+      }
+      .icon-buttons {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 20px;
+          margin-top: 20px;
+      }
+      .icon-buttons button {
+          width: 19%;
+      }
+      .app-section p {
+          margin-bottom: 1rem;
+      }
+      .login-form {
+          max-width: 300px;
+          margin: 0 auto;
+      }
+  </style>
 </head>
 <body>
-    <!-- bootstrap test -->
-    <div class="container">
-        <!-- bootstrap column -->
-        <div class="row">
-          <div class="col-sm-4">
-            <h3>Column 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-          <div class="col-sm-4">
-            <h3>Column 3</h3>        
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-          </div>
-        </div>
-        <!-- bootstrap button -->
-        <div class="btn btn-primary">test</div>
+
+  <div class="container">
+      <!-- Header Section -->
+      <div class="app-header">
+          <h1>Allergies Awareness App</h1>
+          <p>Improving the way consumers access vital information on allergies during shopping</p>
+
+          <div class="search-bar">
+              <input type="text" class="form-control search-input" placeholder="Search for allergies, products...">
       </div>
+
+      <!-- Icon Buttons Section -->
+      <div class="icon-buttons">
+
+          <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Allergy Type</button>
+
+          <button type="button" class="btn btn-secondary"><i class="fas fa-edit"></i> Personal Setting</button>
+
+          <button type="button" class="btn btn-info"><i class="fas fa-info-circle"></i>User Info</button>
+
+           <!-- Scanner button with placeholder for functionality -->
+           <button type="button" class="btn btn-warning" onclick="scanProduct()"><i class="fas fa-barcode"></i> Scanner</button>
+           <!-- Alert Button Section -->
+      <div class="alert-button">
+          <h2>Alert</h2>
+          <button type="button" class="btn btn-success" id="alertToggle" onclick="toggleAlert('alertToggle')">Alert: Off</button>
+      </div>
+
+      </div>
+
+      <!-- Login Form Section -->
+      <div class="app-section">
+          <h2></h2>
+          <form class="login-form">
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username">
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password">
+              </div>
+              <button type="button" class="btn btn-primary">Login</button>
+              <button type="button" class="btn btn-secondary">Register</button>
+              <button type="button" class="btn btn-link">Help</button>
+          </form>
+      </div>
+      <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+    // Placeholder function for handling allergy type button click
+    function allergyTypeSelected(AllergyType) {
+        alert(`Selected Allergy Types: ${allergyType}`);
+        // Add actual functionality for the selected allergy type
+    }
+
+        // Placeholder function for the scanner button
+        function scanProduct() {
+            alert('Please Scan The barcode on The Product!');
+            // Add actual scanner functionality code here
+        }
+        // Placeholder function for alert state
+        function toggleAlert(buttonId) {
+            const alertButton = document.getElementById(buttonId);
+            const isAlertOn = alertButton.classList.contains('btn-success');
+            const alertState = isAlertOn ? 'Off' : 'On';
+
+            alertButton.textContent = `Alert: ${alertState}`;
+            alertButton.classList.toggle('btn-success');
+            alertButton.classList.toggle('btn-danger');
+
+            // Add actual alert functionality code here
+            if (isAlertOn) {
+                // Turn off alert actions
+            } else {
+                // Turn on alert actions
+            }
+        }
+    </script>
 </body>
 </html>
