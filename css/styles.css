@@ -1,0 +1,28 @@
+body {
+    background-color: #F2F2F2;
+}
+.app-header {
+    background-color: hsl(133, 33%, 60%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.app-section {
+    margin: 20px 0;
+}
+.icon-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.icon-buttons button {
+    width: 19%;
+}
+.app-section p {
+    margin-bottom: 1rem;
+}
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
