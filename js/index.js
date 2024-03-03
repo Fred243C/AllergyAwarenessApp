@@ -1,6 +1,19 @@
+    $("document").ready(function(){
+        $("#allergyManagement").click(function(){
+            window.location.href = "allergyManagement.html"; 
+        });
+        $("#realTimeDetection").click(function(){
+            window.location.href = "realTimeDetection.html"; 
+        });
+        $("#settings").click(function(){
+            window.location.href = "settings.html"; 
+        });
+    });
+    
     // Placeholder function for handling allergy type button click
     function allergyTypeSelected(AllergyType) {
-        alert(`Selected Allergy Types: ${allergyType}`);
+        // alert(`Selected Allergy Types: ${allergyType}`);
+
         // Add actual functionality for the selected allergy type
     }
 
