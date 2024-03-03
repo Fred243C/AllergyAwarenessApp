@@ -1,0 +1,19 @@
+.app-header {
+    background-color: hsl(133, 33%, 60%);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.app-section {
+    margin: 20px 0;
+}
+
+.app-section input{
+    margin: auto;
+    width: 50%;
+}
+
+#errorMsg{
+    margin: auto;
+    width: 50%;
+}
