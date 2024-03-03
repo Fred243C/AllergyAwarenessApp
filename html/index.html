@@ -4,9 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="#">
     <title>Allergy Awareness App</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Jquery and bootstrap links -->
     <script src="../js/lib/jquery-3.7.1.min.js"></script>
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -14,38 +15,36 @@
 
   <div class="container">
       <!-- Header Section -->
-      <div class="app-header">
-          <h1>Allergies Awareness App</h1>
-          <p>Improving the way consumers access vital information on allergies during shopping</p>
+    <div class="app-header">
+        <h1>Allergies Awareness App</h1>
+        <p>Improving the way consumers access vital information on allergies during shopping</p>
 
-          <div class="search-bar">
-              <input type="text" class="form-control search-input" placeholder="Search for allergies, products...">
-      </div>
+        <div class="search-bar">
+            <input type="text" class="form-control search-input" placeholder="Search for allergies, products...">
+        </div>
 
       <!-- Icon Buttons Section -->
       <div class="icon-buttons">
-
           <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Allergy Type</button>
-
-          <button type="button" class="btn btn-secondary"><i class="fas fa-edit"></i> Personal Setting</button>
-
-          <button type="button" class="btn btn-info"><i class="fas fa-info-circle"></i>User Info</button>
-
+          <button type="button" class="btn btn-primary"><i class="fas fa-edit"></i> Personal Setting</button>
+          <button type="button" class="btn btn-primary"><i class="fas fa-info-circle"></i>User Info</button>
            <!-- Scanner button with placeholder for functionality -->
-           <button type="button" class="btn btn-warning" onclick="scanProduct()"><i class="fas fa-barcode"></i> Scanner</button>
-
+           <button type="button" class="btn btn-primary" onclick="scanProduct()"><i class="fas fa-barcode"></i> Scanner</button>
       </div>
       <!-- Alert Button Section -->
       <div class="alert-button">
           <h2>Alert</h2>
           <button type="button" class="btn btn-success" id="alertToggle" onclick="toggleAlert('alertToggle')">Alert: Off</button>
       </div>
+
+    </div>
+    </div>
       <!-- Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- js script -->
-    <script src="../js/script.js"></script>
+    <script src="../js/index.js"></script>
 </body>
 </html>
