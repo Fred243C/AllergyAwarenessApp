@@ -3,8 +3,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/register.css">
+    <!-- Jquery and bootstrap links -->
+    <script src="../js/lib/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    
+    <div class="app-header">
+        <h1>Allergies Awareness App</h1>
+        <p>Improving the way consumers access vital information on allergies during shopping</p><br/>
+        <h2>Register</h2>
+        <form action="#">
+            <!-- name -->
+            <div class="form-group">
+                <label for="email">Name: </label>
+                <input type="text" class="form-control" id="name"/>
+            </div>
+            <!-- surname -->
+            <div class="form-group">
+                <label for="email">Surname:</label>
+                <input type="text" class="form-control" id="surname"/>
+            </div>
+            <!-- email -->
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email"/>
+            </div>
+            <!-- symptom -->
+            <div class="form-group">
+                <label for="symptom">Symptom</label>
+                <input type="text" class="form-control" id="symptom"/>
+            </div>
+            <button class="btn btn-primary">Do you have other symptoms?</button>
+
+            <!-- checkbox for newsletter -->
+            <div class="checkbox">
+              <label><input type="checkbox"> I want to subscribe to the Allergy Awareness Newsletter </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
