@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="#">
+    <title>Allergy Awareness App</title>
+    <!-- CSS link -->
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom CSS for mobile layout */
+        .app-header {
+            padding: 20px;
+            text-align: center;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .icon-buttons {
+            margin-bottom: 20px;
+        }
+        .alert-button {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <div class="app-header">
+        <h1>Allergies Awareness App</h1>
+        <p>Improving the way consumers access vital information on allergies during shopping</p>
+        
+        <div class="search-bar">
+            <input type="text" class="form-control search-input" placeholder="Search for allergies, products...">
+        </div>
+
+        <!-- Icon Buttons Section -->
+        <div class="icon-buttons">
+            <button type="button" id="allergyManagement" class="btn btn-primary btn-lg"><i class="fas fa-plus"></i> Allergy Management</button>
+            <button type="button" id="realTimeDetection" class="btn btn-primary btn-lg"><i class="fas fa-edit"></i> Real Time Detection</button>
+            <!-- Scanner button with placeholder for functionality -->
+            <button type="button" id="settings" class="btn btn-primary btn-lg"><i class="fas fa-barcode"></i> Settings</button>
+        </div>
+
+        <!-- Alert Button Section -->
+        <div class="alert-button">
+            <h2>Alert</h2>
+            <button type="button" class="btn btn-success btn-lg" id="alertToggle" onclick="toggleAlert('alertToggle')">Alert: Off</button>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your custom JS -->
+<script src="../js/index.js"></script>
+</body>
+</html>
